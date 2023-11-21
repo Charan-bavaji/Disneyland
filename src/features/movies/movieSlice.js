@@ -21,7 +21,6 @@ const movieSlice = createSlice({
         },
     },
 });
-
 export const { setMovies } = movieSlice.actions;
 
 export const selectRecommend = (state) => state.movie.recommend;

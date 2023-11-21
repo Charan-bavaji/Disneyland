@@ -1,13 +1,12 @@
 import React from 'react'
 import { useSelector } from 'react-redux';
-import { selectRecommend } from '../features/movies/movieSlice';
+import { selectOriginal } from '../features/movies/movieSlice';
 import { Link } from 'react-router-dom';
-
-const Recommended = () => {
-  const movies = useSelector(selectRecommend);
+const Originals = () => {
+  const movies = useSelector(selectOriginal);
   return (
-    <div className='flex flex-col justify-start items-start'>
-      <h1 className='pl-8 text-lg'>Recommended for You</h1>
+    <div>
+      <h1 className='pl-8 text-lg'>Originals</h1>
       <section className=' grid p-4 gap-6 grid-cols-1  xsm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
         {
           movies && movies.map((movie, key) => (
@@ -22,4 +21,5 @@ const Recommended = () => {
     </div>
   )
 }
-export default Recommended;
+
+export default Originals

@@ -8,6 +8,10 @@ import db from "../firebase";
 import { setMovies } from "../features/movies/movieSlice";
 import { selectUserName } from "../features/user/userSlice";
 import { collection, getDocs } from 'firebase/firestore';
+import Recommended from './Recommended';
+import NewDisney from './NewDisney';
+import Originals from './Originals';
+import Trending from './Trending';
 const Home = () => {
 
     const dispatch = useDispatch();
@@ -60,8 +64,14 @@ const Home = () => {
     return (
         <section className=' bg-[url("/src/assets/images/home-background.png")] w-auto h-auto bg-cover bg-repeat-y'>
             <NavBar />
-            <ImgSlider />
-            <Viewers />
+            <article className='pt-24'>
+                <ImgSlider />
+                <Viewers />
+                <Recommended />
+                <NewDisney />
+                <Originals />
+                <Trending />
+            </article>
         </section>
     )
 }

@@ -4,7 +4,7 @@ import { disneyVid, marvelVid, nationalVid, pixerVid, starsVid } from '../assets
 const Viewers = () => {
   return (
     <section className='w-full h-auto mt-2'>
-      <article className=' grid p-4 gap-6 grid-cols-1 xsm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5'>
+      <article className=' grid justify-center items-center p-16 gap-6 grid-cols-1 xsm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5'>
         <div className='group relative border-2 border-slate-500 rounded-xl shadow-2xl transition-all cursor-pointer hover:translate-y-[-1rem]'>
           <img src={disney} alt="img1" className='relative top-0 z-10' />
           <video autoPlay loop muted className='absolute top-0 w-full h-full rounded-xl z-0 ease-in hidden group-hover:block'>

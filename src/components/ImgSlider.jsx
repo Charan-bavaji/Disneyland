@@ -9,7 +9,7 @@ const ImgSlider = () => {
   // xl	1280px
   // 2xl 1536px
   return (
-    <div className=' w-full h-[auto] p-2'>
+    <div className=' w-full h-[auto] p-2 '>
       <CCarousel controls >
         <CCarouselItem>
           <CImage className="d-block w-100" src={slide1} alt="slide 1" />

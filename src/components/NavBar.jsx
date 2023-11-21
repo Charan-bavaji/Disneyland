@@ -22,7 +22,9 @@ const NavBar = () => {
         try {
             const result = await signInWithPopup(auth, googleProvider);
             setUser(result.user);
+            // console.log(result.user.photoURL, result.user.displayName);
         } catch (error) {
+            console.error("Google sign-in error:", error);
             alert(error.message);
         }
     };
@@ -55,7 +57,7 @@ const NavBar = () => {
             }
         });
     }, [userName]);
-    
+
     const imges = [{
         name: "home",
         img: homeIcon,
@@ -78,7 +80,7 @@ const NavBar = () => {
     ]
 
     return (
-        <div className=' w-full h-20 flex justify-between '>
+        <div className=' fixed w-full h-20 flex justify-between z-50 backdrop-blur-md '>
             <div className='w-[8rem] h-20 z-1  flex justify-center items-center'>
                 <img src={disLogo} alt='img' className="w-20 relative" />
             </div>
