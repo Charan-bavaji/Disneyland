@@ -12,6 +12,12 @@ import {
     setSignOutState
 } from "../features/user/userSlice";
 
+// sm	640px	
+// md	768px	
+// lg	1024px
+// xl	1280px
+// 2xl	1536px
+
 const NavBar = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
@@ -80,17 +86,15 @@ const NavBar = () => {
     ]
 
     return (
-        <div className=' fixed w-full h-20 flex justify-between z-50 backdrop-blur-md '>
+        <div className=' fixed w-full h-20 flex justify-between z-50 backdrop-blur-sm '>
             <div className='w-[8rem] h-20 z-1  flex justify-center items-center'>
                 <img src={disLogo} alt='img' className="w-20 relative" />
             </div>
             {
                 !userName ? <div className='w-28 h-20 z-1 flex justify-center items-center'>
-                    {/* <Link to={"/home"}> */}
                     <button
                         onClick={signInWithGoogle}
                         className="border-solid border-2 border-white-500 py-1 px-3 rounded-md hover:text-black hover:bg-white ">Login</button>
-                    {/* </Link> */}
                 </div> : <>
                     <div className="w-full flex justify-between items-center">
                         <section className='flex '>
