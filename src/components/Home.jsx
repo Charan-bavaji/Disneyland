@@ -1,6 +1,5 @@
 import React from 'react';
 import ImgSlider from './ImgSlider';
-import NavBar from './NavBar';
 import Viewers from './Viewers';
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -63,7 +62,6 @@ const Home = () => {
 
     return (
         <section className=' bg-[url("/src/assets/images/home-background.png")] w-auto h-auto bg-cover bg-repeat-y'>
-            <NavBar />
             <article className='pt-24'>
                 <ImgSlider />
                 <Viewers />

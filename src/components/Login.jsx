@@ -1,10 +1,8 @@
 import React from 'react'
-import NavBar from './NavBar'
 const Login = () => {
   return (
     <section className="w-full h-[100vh] bg-[url('/src/assets/images/home-background.png')] bg-cover bg-no-repeat">
-      <NavBar />
-      <div className="w-full h-[84.5vh] px-8 bg-[url('/src/assets/images/login-background.jpg')] bg-cover bg-no-repeat bg-center flex justify-center items-center md:h-[84.5vh] lg:h-[89vh]">
+      <div className="w-full h-[100vh] px-8 bg-[url('/src/assets/images/login-background.jpg')] bg-cover bg-no-repeat bg-center flex justify-center items-center md:h-[100vh] lg:h-[100vh] ">
         <div className=" flex flex-col pb-10 w-[36rem] h-auto ">
           <div className="py-2">
             <img src='/src/assets/images/cta-logo-one.svg' alt='img1' />

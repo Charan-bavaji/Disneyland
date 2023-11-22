@@ -16,6 +16,10 @@ import marvel from "./viewers-marvel.png";
 import national from "./viewers-national.png";
 import pixar from "./viewers-pixar.png";
 import starwar from "./viewers-starwars.png";
+// buttons
+import playButBlack from "./play-icon-black.png";
+import playButWhite from "./play-icon-white.png";
+import groupBut from './group-icon.png';
 export {
     homeIcon,
     movieIcon,
@@ -31,5 +35,8 @@ export {
     marvel,
     pixar,
     starwar,
-    national
+    national,
+    playButBlack,
+    playButWhite,
+    groupBut
 };
