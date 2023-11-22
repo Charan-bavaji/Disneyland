@@ -4,6 +4,8 @@ import searchIcon from "./search-icon.svg";
 import watchIcon from "./watchlist-icon.svg";
 import originals from "./original-icon.svg";
 import series from "./series-icon.svg";
+import hamburger from './hamburger.svg';
+import close from './close.svg'
 // imageSlider
 import slide1 from "./slider-badag.jpg";
 import slide2 from "./slider-badging.jpg";
@@ -26,6 +28,8 @@ export {
     searchIcon,
     watchIcon,
     originals,
+    hamburger,
+    close,
     series,
     slide1,
     slide2, slider3,

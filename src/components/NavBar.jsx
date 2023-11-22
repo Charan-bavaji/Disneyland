@@ -87,7 +87,7 @@ const NavBar = () => {
 
     return (
         <div className=' fixed w-full h-20 flex justify-between z-50 backdrop-blur-sm '>
-            <div className='w-[8rem] h-20 z-1  flex justify-center items-center'>
+            <div className='w-[8rem] h-20 z-1  flex justify-center items-center pl-10 md:pl-0'>
                 <img src={disLogo} alt='img' className="w-20 relative" />
             </div>
             {
@@ -97,10 +97,13 @@ const NavBar = () => {
                         className="border-solid border-2 border-white-500 py-1 px-3 rounded-md hover:text-black hover:bg-white ">Login</button>
                 </div> : <>
                     <div className="w-full flex justify-between items-center">
-                        <section className='flex '>
+                        <section className='flex sm:justify-center sm:items-center lg:pl-10'>
+                            {/* <div className='w-[8rem] h-20 z-1  flex justify-center items-center md:hidden lg:hidden'>
+                                <img src={disLogo} alt='img' className="w-20 relative" />
+                            </div> */}
                             {imges.map((item, index) => (
-                                <div className="h-20 flex justify-center items-center" key={index}>
-                                    <div className="w-full h-20 px-4 flex justify-center items-center flex-row hover:cursor-pointer ">
+                                <div className="h-20 justify-center items-center px-2 hidden md:flex" key={index}>
+                                    <div className="w-full h-20 flex justify-center gap-1 items-center flex-row hover:cursor-pointer ">
                                         <img src={item.img} alt={item.name} className="w-6" />
                                         <span className="relative top-0.5 tracking-[2px] text-sm hover:border-b-2 border-white transition-[all 250ms]">
                                             {item.name}

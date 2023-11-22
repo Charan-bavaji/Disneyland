@@ -6,6 +6,7 @@ import Login from './components/Login';
 import Home from './components/Home';
 import Details from './components/Details';
 import NavBar from './components/NavBar';
+import FloatHam from './components/FloatHam';
 function App() {
   // if any component is using
   // const router = createBrowserRouter([
@@ -23,7 +24,8 @@ function App() {
   return (
     <main className=''>
       <Router>
-        <NavBar/>
+        <NavBar />
+        <FloatHam />
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/home" element={<Home />} />
