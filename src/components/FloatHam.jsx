@@ -14,7 +14,7 @@ const FloatHam = () => {
         setView((view) => !view);
     }
     return (
-        <div className='fixed z-50 top-[50%] right-2'>
+        <div className='fixed z-50 top-[80%] right-2'>
             <div className='hidden md:hidden max-lg:block w-auto rounded-full bg-slate-200 p-2 '>
                 <img src={change ? hamburger : close}
                     alt='Hamburger'
@@ -66,32 +66,6 @@ const FloatHam = () => {
                     </ul>}
                 </div>
             </div>
-            {/* <div className=" p-3 m-1 md:hidden flex justify-center items-center">
-                <span className="material-symbols-outlined hover:rounded-full p-1.5 hover:bg-red-400"
-                    onClick={displayList}
-                >
-                    menu_open
-                </span>
-            </div>
-            {lists && <div className=" relative w-full h-auto flex flex-col justify-center items-center backdrop-blur-sm bg-black/20 md:hidden z-50">
-                <a href='#' className=' bg-red-400 py-2 m-1 px-3 text-md tracking-[0.1rem] hover:tracking-[0.2rem]  hover:animate-bounce'>
-                    <span>Home</span>
-                </a>
-                <a href='#Skills' className="py-3 m-1 px-20 text-md tracking-[0.1rem] hover:tracking-[0.2rem]  hover:animate-bounce">
-                    <span >Skills</span>
-                </a>
-                <a href="#Projects" className="py-3 m-1 px-20 text-md tracking-[0.1rem] hover:tracking-[0.2rem]  hover:animate-bounce">
-                    <span>Project</span>
-                </a>
-                <a href="#Contact" className="py-3 m-1 px-20 text-md tracking-[0.1rem] hover:tracking-[0.2rem]  hover:animate-bounce">
-                    <span>Contact</span>
-                </a>
-                <a href='#About' className="py-3 m-1 px-20 text-md tracking-[0.1rem] hover:tracking-[0.2rem]  hover:animate-bounce">
-                    <span>About</span>
-                </a>
-            </div>} */}
-
-
         </div>
     )
 }

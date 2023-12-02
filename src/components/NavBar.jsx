@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import disLogo from '../assets/images/logo.svg';
 import { homeIcon, movieIcon, searchIcon, watchIcon, originals, series } from '../assets/images';
 import { auth, googleProvider } from '../firebase';
@@ -67,6 +67,7 @@ const NavBar = () => {
     const imges = [{
         name: "home",
         img: homeIcon,
+        link:"home"
     }, {
         name: "movie",
         img: movieIcon,
@@ -103,12 +104,14 @@ const NavBar = () => {
                             </div> */}
                             {imges.map((item, index) => (
                                 <div className="h-20 justify-center items-center px-2 hidden md:flex" key={index}>
+                                    <Link to={item.link}>
                                     <div className="w-full h-20 flex justify-center gap-1 items-center flex-row hover:cursor-pointer ">
                                         <img src={item.img} alt={item.name} className="w-6" />
                                         <span className="relative top-0.5 tracking-[2px] text-sm hover:border-b-2 border-white transition-[all 250ms]">
                                             {item.name}
                                         </span>
                                     </div>
+                                    </Link>
                                 </div>
                             ))}
                         </section>
