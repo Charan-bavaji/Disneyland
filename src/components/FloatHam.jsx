@@ -31,37 +31,37 @@ const FloatHam = () => {
                             <p className=' hidden group-hover:block'>
                                 home
                             </p>
-                            <img src={homeIcon} className='border-2 border-slate-300 rounded-full hover:bg-slate-700 p-1' width={40} height={40} />
+                            <img src={homeIcon} className='border-2 border-slate-300 rounded-full bg-slate-700 p-1' width={40} height={40} />
                         </li>
                         <li className=' group flex flex-col-reverse p-1 gap-2 justify-end items-center w-auto'>
                             <p className=' hidden group-hover:block'>
                                 movies
                             </p>
-                            <img src={movieIcon} className='border-2 border-slate-300 rounded-full hover:bg-slate-700 p-1' width={40} height={40} />
+                            <img src={movieIcon} className='border-2 border-slate-300 rounded-full bg-slate-700 p-1' width={40} height={40} />
                         </li>
                         <li className=' group flex flex-col-reverse p-1 gap-2 justify-end items-center w-auto'>
                             <p className=' hidden group-hover:block'>
                                 search
                             </p>
-                            <img src={searchIcon} className='border-2 border-slate-300 rounded-full hover:bg-slate-700 p-1' width={40} height={40} />
+                            <img src={searchIcon} className='border-2 border-slate-300 rounded-full bg-slate-700 p-1' width={40} height={40} />
                         </li>
                         <li className=' group flex flex-col-reverse p-1 gap-2 justify-end items-center w-auto'>
                             <p className=' hidden group-hover:block'>
                                 watch
                             </p>
-                            <img src={watchIcon} className='border-2 border-slate-300 rounded-full hover:bg-slate-700 p-1' width={40} height={40} />
+                            <img src={watchIcon} className='border-2 border-slate-300 rounded-full bg-slate-700 p-1' width={40} height={40} />
                         </li>
                         <li className=' group flex flex-col-reverse p-1 gap-2 justify-end items-center w-auto'>
                             <p className=' hidden group-hover:block'>
                                 orignials
                             </p>
-                            <img src={originals} className='border-2 border-slate-300 rounded-full hover:bg-slate-700 p-1' width={40} height={40} />
+                            <img src={originals} className='border-2 border-slate-300 rounded-full bg-slate-700 p-1' width={40} height={40} />
                         </li>
                         <li className=' group flex flex-col-reverse p-1 gap-2 justify-end items-center w-auto'>
                             <p className=' hidden group-hover:block'>
                                 series
                             </p>
-                            <img src={series} className='border-2 border-slate-300 rounded-full hover:bg-slate-700 p-1' width={40} height={40} />
+                            <img src={series} className='border-2 border-slate-300 rounded-full bg-slate-700 p-1' width={40} height={40} />
                         </li>
                     </ul>}
                 </div>
